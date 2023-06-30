@@ -15,9 +15,9 @@ export default function Posts() {
     }
     ]
     return (
-        <div className="posts">
-            {posts.map((p) => (
-                <Post key = {p.altCurtidas} post = {p}/>
+        <div class="posts">
+            {posts.map((post) => (
+                <Post key = {post.altCurtidas} post = {post}/>
             ))}
         </div>
     );

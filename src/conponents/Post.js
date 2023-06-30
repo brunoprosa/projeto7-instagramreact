@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-export default function Post(post) {
+export default function Post({post}) {
+    console.log(post);
 
     let [curtidas, setCurtidas] = useState(58931);
     let [salvo, setSalvo] = useState("bookmark-outline");
