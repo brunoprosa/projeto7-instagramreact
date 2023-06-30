@@ -1,15 +1,11 @@
-import React from "react";
+import { useState } from "react";
 
-export default function Post2() {
-    const post = {
-        imgUsuario: "assets/img/barked.svg", nomeUsuario: "barked", imgConteudo: "assets/img/dog.svg",
-        altConteudo: "dog", imgCurtidas: "assets/img/adorable_animals.svg", altCurtidas: "adorable_animals"
-    };
+export default function Post(post) {
 
-    let [curtidas, setCurtidas] = React.useState(128432);
-    let [salvo, setSalvo] = React.useState("bookmark-outline");
-    let [like, setLike] = React.useState("heart-outline");
-    let [cor, setCor] = React.useState("preto");
+    let [curtidas, setCurtidas] = useState(58931);
+    let [salvo, setSalvo] = useState("bookmark-outline");
+    let [like, setLike] = useState("heart-outline");
+    let [cor, setCor] = useState("preto");
 
     function salvarPost() {
         if (salvo === "bookmark-outline") setSalvo("bookmark");

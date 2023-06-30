@@ -1,11 +1,11 @@
-export default function Story2() {
+export default function Story({img, usuario}) {
     return (
         <div class="story">
             <div class="imagem">
-                <img src="assets/img/meowed.svg" alt="meowed" />
+                <img src={img} alt={usuario} />
             </div>
             <div class="usuario">
-                meowed
+                {usuario}
             </div>
         </div>
     );

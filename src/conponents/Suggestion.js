@@ -1,11 +1,11 @@
-export default function Suggestion2() {
+export default function Suggestion({name, image, reason}) {
     return (
         <div class="sugestao">
             <div class="usuario">
-                <img src="assets/img/chibirdart.svg" alt="chibirdart" />
+                <img src={image} alt={name} />
                 <div class="texto">
-                    <div class="nome">chibirdart</div>
-                    <div class="razao">Segue você</div>
+                    <div class="nome">{name}</div>
+                    <div class="razao">{reason}</div>
                 </div>
             </div>
 

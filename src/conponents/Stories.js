@@ -1,6 +1,4 @@
-import Story1 from "./Story1";
-import Story2 from "./Story2";
-import Story3 from "./Story3";
+import Story from "./Story";
 
 export default function Stories() {
     const stories = [{ img: "assets/img/9gag.svg", usuario: "9gag" },
@@ -14,9 +12,9 @@ export default function Stories() {
 
     return (
     <div class="stories">
-        <Story1 />
-        <Story2 />
-        <Story3 />
+        {stories.map(s =>(
+            <Story key={s.usuario} img={s.img} usuario={s.usuario}/>
+        ))}
 
         <div class="setinha">
             <ion-icon name="chevron-forward-circle"></ion-icon>
